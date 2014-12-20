@@ -1,4 +1,4 @@
-# gonzalo123/AngularPostRequestServiceProvider
+# AngularPostRequestServiceProvider
 
 When we work with AngularJs Applications POST request uses Content-Type: application/json
 Silex (and Symfony) assumes application/x-www-form-urlencoded
