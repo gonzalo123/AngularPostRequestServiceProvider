@@ -14,7 +14,7 @@ In this small project we are going to enclose this funcionality within a Service
 ```json
 {
     "require": {
-        "G/AngularPostRequestServiceProvider": "~1.0"
+        "gonzalo123/angularpostrequestserviceprovider": "~1.0"
     }
 }
 ```
