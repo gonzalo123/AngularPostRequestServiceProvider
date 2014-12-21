@@ -23,7 +23,7 @@ class AngularPostRequestServiceProvider implements ServiceProviderInterface
     {
     }
 
-    public function transformContent($content)
+    private function transformContent($content)
     {
         return json_decode($content, true);
     }
@@ -31,9 +31,5 @@ class AngularPostRequestServiceProvider implements ServiceProviderInterface
     private function isRequestTransformable(Request $request)
     {
         return 0 === strpos($request->headers->get('Content-Type'), 'application/json');
-    }
-    static function create()
-    {
-        return new self(new Transformer());
     }
 }
