@@ -4,12 +4,11 @@ namespace G;
 
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
-use Pimple\ServiceProviderInterface;
-use Pimple\Container;
+use Silex\ServiceProviderInterface;
 
 class AngularPostRequestServiceProvider implements ServiceProviderInterface
 {
-    public function register(Container $app)
+    public function register(Application $app)
     {
         $app->before(function (Request $request) {
             if ($this->isRequestTransformable($request)) {

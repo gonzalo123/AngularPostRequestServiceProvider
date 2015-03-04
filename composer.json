@@ -13,7 +13,7 @@
     }
   ],
   "require": {
-    "silex/silex": "2.0.*@dev"
+    "silex/silex": ">=v1.1.2, <2.0"
   },
   "autoload": {
     "psr-4": {
